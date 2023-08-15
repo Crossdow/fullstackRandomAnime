@@ -1,0 +1,273 @@
+body {
+    background-color: #5CDB95;
+    overflow-x: hidden;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.container {
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button__text {
+    pointer-events: none;
+}
+
+/*НАВИГАЦИОННАЯ ПАНАЛЬ*/
+.header {
+    top: 0;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    background-color: #5CDB95;
+}
+
+.navbar {
+    margin-left: 2%;
+    margin-right: 2%;
+    position: relative;
+    top: 30%;
+}
+
+.navbar__menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.navbar__menu-item,
+.navbar__menu-item:active,
+.navbar__menu-item:hover {
+    text-decoration: none;
+    color: #05386B;
+}
+
+
+/*MAIN часть*/
+.main {
+    background-image: url("../assets/images/main/Asuka.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main .text {
+    font-size: 40px;
+}
+
+.welcome__text,
+.description__text {
+    color: #EDF5E1;
+}
+
+
+.anime__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+/*
+FOOTER*/
+
+.footer {
+    height: 70px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #5CDB95;
+}
+
+.footer__contact-text {
+    margin-left: 2%;
+    text-align: center;
+}
+
+/*
+MODAL WINDOW*/
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+.modalLogin {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal_login-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .modal-content {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .modal-content {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .modal-content {
+        width: 80%;
+    }
+}
+
+/* Стиль кнопки закрытия */
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стиль кнопки открытия модального окна */
+.modal-button {
+    background:none;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*
+ФОРМА РЕГИСТРАЦИИ*/
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.register-btn, #log, #login {
+    background: transparent;
+    border: 5px solid transparent;
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #ff7382, #cb2fe7) border-box;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 5%;
+}
+
+.try__button, .randomAnime__button, .buttonLinkAnime, .buttonLinkManga, .addButton {
+    background: transparent;
+    border: 5px solid transparent;
+    background: padding-box, linear-gradient(to right, #ff7382, #cb2fe7) border-box;
+    color: #05386B;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 5%;
+}
+
+.exit_btn, .return_btn {
+    text-decoration: none;
+    cursor: pointer;
+    color: #05386B;
+    border-color: #05386B;
+    background: none;
+}
+
+.register-btn:hover {
+    opacity:1;
+}
+
+a {
+    color: dodgerblue;
+}
+
+#username-display {
+    font-size: large;
+    font-weight: bold;
+}
+
+/*Библиотека*/
+
+.library-button {
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.newMain {
+    background-image: url("../assets/images/main/Rei.png");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: 200% 50%;
+    min-height: 100vh;
+}
+
+.favourites__list {
+    list-style-type: none;
+}
